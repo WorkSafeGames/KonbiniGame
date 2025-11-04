@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=3 uid="uid://dxxw0254pii15"]
+
+[ext_resource type="Script" uid="uid://bb0doxgm342be" path="res://camera_logic.gd" id="1_0vvw7"]
+
+[node name="CameraPosition" type="Node3D"]
+script = ExtResource("1_0vvw7")
+rotation_speed = 1.0
+
+[node name="CameraRotation" type="Node3D" parent="."]
+
+[node name="CameraZoomPivot" type="Node3D" parent="CameraRotation"]
+
+[node name="Camera3D" type="Camera3D" parent="CameraRotation/CameraZoomPivot"]
