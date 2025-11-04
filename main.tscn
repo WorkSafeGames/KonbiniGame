@@ -1,7 +1,6 @@
-[gd_scene load_steps=7 format=3 uid="uid://d07tdc3gml4p"]
+[gd_scene load_steps=6 format=3 uid="uid://d07tdc3gml4p"]
 
 [ext_resource type="Script" uid="uid://bb0doxgm342be" path="res://camera_logic.gd" id="1_ig7tw"]
-[ext_resource type="PackedScene" uid="uid://btbmsrxhco3pn" path="res://grid.tscn" id="2_0xm2m"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_7dm0k"]
 sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
@@ -42,6 +41,3 @@ shadow_enabled = true
 [node name="CSGBox3D-StoreFloor" type="CSGBox3D" parent="."]
 size = Vector3(100, 0.1, 100)
 material = SubResource("StandardMaterial3D_7dm0k")
-
-[node name="Grid" parent="." instance=ExtResource("2_0xm2m")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 8.325962, 0)
